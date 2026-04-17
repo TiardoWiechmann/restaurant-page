@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/TiardoWiechmann/restaurant-page/issues"
   },
-  "homepage": "https://github.com/TiardoWiechmann/restaurant-page#readme"
+  "homepage": "https://github.com/TiardoWiechmann/restaurant-page#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.6",
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
+  }
 }
