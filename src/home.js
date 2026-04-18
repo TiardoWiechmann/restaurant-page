@@ -1,15 +1,17 @@
+// home.js
+
 import restaurantImage from "../images/indian-meal.jpg";
 
-export const home = () => {
-    const contentDiv = document.getElementById("content");
+export function home() {
+    const homeDiv = document.createElement("div");
     const heading = document.createElement("h1");
     heading.textContent = "Indian Kitchen";
     const image = document.createElement("img");
     image.width = 200;
     image.src = restaurantImage;
     image.alt = "Delicious indian meal"
-    const contentP = document.createElement("p");
-    contentP.innerText = `Welcome to Indian Kitchen – your destination for authentic indian cuisine.
+    const homeP = document.createElement("p");
+    homeP.innerText = `Welcome to Indian Kitchen – your destination for authentic indian cuisine.
 
     At Indian Kitchen, we bring together traditional recipes, fresh ingredients, and a warm, inviting atmosphere to create a dining
     experience that feels both special and familiar. Whether you are joining us for a relaxed dinner, a family celebration, or a
@@ -17,7 +19,8 @@ export const home = () => {
     balance flavor, freshness, and authenticity.
     We look forward to welcoming you to Indian Kitchen and sharing the rich flavors of Indian cuisine with you.`;
     
-    contentDiv.appendChild(heading);
-    contentDiv.appendChild(image);
-    contentDiv.appendChild(contentP);
+    homeDiv.appendChild(heading);
+    homeDiv.appendChild(image);
+    homeDiv.appendChild(homeP);
+    return homeDiv;
 };

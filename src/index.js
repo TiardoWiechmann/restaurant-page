@@ -1,3 +1,7 @@
-import { home } from "./home.js"
+// index .js
+import "./menu.css";
+import { home } from "./home.js";
 
-home();
+// const contentDiv = document.querySelector("#content");
+// contentDiv.appendChild(home());
+// console.log(contentDiv.textContent);
