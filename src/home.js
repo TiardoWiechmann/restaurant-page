@@ -3,7 +3,8 @@
 import restaurantImage from "../images/indian-meal.jpg";
 
 export function home() {
-    const homeDiv = document.createElement("div");
+    const content = document.querySelector("#content");
+    content.textContent = "";
     const heading = document.createElement("h1");
     heading.textContent = "Spicegarden";
     const image = document.createElement("img");
@@ -19,8 +20,7 @@ export function home() {
     balance flavor, freshness, and authenticity.
     We look forward to welcoming you to Spicegarden and sharing the rich flavors of Indian cuisine with you.`;
     
-    homeDiv.appendChild(heading);
-    homeDiv.appendChild(image);
-    homeDiv.appendChild(homeP);
-    return homeDiv;
+    content.appendChild(heading);
+    content.appendChild(image);
+    content.appendChild(homeP);
 };

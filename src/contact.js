@@ -2,6 +2,7 @@ import "./contact.css";
 
 export function contact() {
     const content = document.querySelector("#content");
+    content.textContent = "";
     
     const heading = document.createElement("div");
     heading.className = "heading";

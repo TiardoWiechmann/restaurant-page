@@ -1,11 +1,22 @@
 // index .js
-// import { home } from "./home.js";
-// import { menu } from "./menu.js";
+import { home } from "./home.js";
+import { menu } from "./menu.js";
 import { contact } from "./contact.js";
 
-// const contentDiv = document.querySelector("#content");
-// contentDiv.appendChild(home());
-// console.log(contentDiv.textContent);
-
-// menu();
-contact();
+const buttons = document.querySelectorAll("button");
+buttons.forEach((buttons) => {
+    buttons.addEventListener("click", (e) => {
+        const btnCls = e.target.className;
+        switch (btnCls) {
+            case "home":
+                home();
+                break;
+            case "menu":
+                menu();
+                break;
+            case "contact":
+                contact();
+                break;
+        }
+    });
+});
