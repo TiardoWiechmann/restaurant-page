@@ -1,7 +1,10 @@
 // index .js
+import "./styles.css";
 import { home } from "./home.js";
 import { menu } from "./menu.js";
 import { contact } from "./contact.js";
+
+home();
 
 const buttons = document.querySelectorAll("button");
 buttons.forEach((buttons) => {

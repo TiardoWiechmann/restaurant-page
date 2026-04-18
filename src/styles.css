@@ -47,11 +47,36 @@ button:hover {
     padding-right: 100px;
 }
 
-.heading {
-    text-align: center;
+/* home */
+img {
+    display: block;
+    margin: auto;
+}
+
+/* menu */
+.meal-courses {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.starters,
+.main-dishes,
+.desserts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meals {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
 }
 
 
+/* contact */
 .infos {
     padding-top: 10px;
     padding-left: 20px;
@@ -64,6 +89,7 @@ ul {
 h1 {
     font-size: 3rem;
     text-decoration: underline;
+    text-align: center;
 }
 
 h2 {

@@ -1,6 +1,4 @@
 // menu.js
-import "./menu.css";
-
 export function menu() {
     const content = document.querySelector("#content");
     content.textContent = "";

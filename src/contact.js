@@ -1,5 +1,3 @@
-import "./contact.css";
-
 export function contact() {
     const content = document.querySelector("#content");
     content.textContent = "";
