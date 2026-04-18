@@ -1,1 +1,3 @@
-alert("Test");
+import { home } from "./home.js"
+
+home();

@@ -14,4 +14,12 @@ export default {
       template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+        {
+            test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+            type: "asset/resource",
+        },
+    ],
+  },
 };
