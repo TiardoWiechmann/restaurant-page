@@ -1,5 +1,4 @@
 // home.js
-
 import restaurantImage from "../images/indian-meal.jpg";
 
 export function home() {
